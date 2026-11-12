@@ -1,0 +1,32 @@
+{
+  "name": "dsh-email-agent",
+  "version": "0.1.0",
+  "description": "Bind a mailbox inside DeepSeek Harness: incoming email becomes an agent run, the reply is mailed back.",
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "icon.svg",
+  "license": "MIT",
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "cordis", "email", "imap", "smtp", "agent"],
+  "homepage": "https://github.com/",
+  "repository": { "type": "git", "url": "git+https://github.com/" },
+  "bugs": { "url": "https://github.com/" },
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib", "cordis.patch.yml", "icon.svg", "README.md", "LICENSE"],
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "imapflow": "^2.10.0",
+    "mailparser": "^3.14.1",
+    "nodemailer": "^10.3.1"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "compatibility": {
+      "dshReleases": { "0.2.0-rc.2": "compatible" }
+    }
+  },
+  "publishConfig": { "access": "public", "registry": "https://registry.npmjs.org/" }
+}

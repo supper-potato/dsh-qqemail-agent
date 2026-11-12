@@ -1,0 +1,15 @@
+# Mount declaration for dsh-email-agent (bundle patch layer).
+#
+# The entry id must equal the package name: the store pre-check matches
+# entryIds against the bundle name.
+#
+# Usage: install, then edit the config file the plugin prints on first run:
+#   %USERPROFILE%\.dsh\email-agent\config.json
+# Fill mailUser / mailPassword (the mailbox authorization code), restart DSH.
+
+- insert:
+    - id: dsh-email-agent
+      name: 'dsh-email-agent'
+      config:
+        enabled: false
+        pollIntervalMs: 30000
