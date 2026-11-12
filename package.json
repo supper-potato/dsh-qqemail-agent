@@ -7,9 +7,9 @@
   "icon": "icon.svg",
   "license": "MIT",
   "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "cordis", "email", "imap", "smtp", "agent"],
-  "homepage": "https://github.com/",
-  "repository": { "type": "git", "url": "git+https://github.com/" },
-  "bugs": { "url": "https://github.com/" },
+   "homepage": "https://github.com/supper-potato/dsh-qqemail-agent",
+  "repository": { "type": "git", "url": "git+https://github.com/supper-potato/dsh-qqemail-agent.git" },
+  "bugs": { "url": "https://github.com/supper-potato/dsh-qqemail-agent/issues" },
   "exports": {
     ".": "./lib/index.js",
     "./cordis.patch.yml": "./cordis.patch.yml",
